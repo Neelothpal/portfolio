@@ -49,7 +49,7 @@ const CaseStudy = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="flex flex-col gap-20 pt-16 w-full">
+                    <div className="flex flex-col gap-8 sm:gap-12 md:gap-20 pt-16 w-full">
                         <div className="flex flex-col md:flex-row flex-wrap">
                             <h1 className="font-oswald font-semibold text-5xl md:w-1/2 text-neutral_light">
                                 Brief
