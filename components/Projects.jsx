@@ -1,7 +1,7 @@
 
 import Project from './Project'
-import HashGuard from '../public/hashguard.png'
-import StudySquard from '../public/studysquad.png'
+import HashGuard from '@public/hashguard.png'
+import StudySquard from '@public/studysquad.png'
 
 const Projects = () => {
 
