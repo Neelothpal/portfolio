@@ -18,7 +18,7 @@ const Experience = () => {
                     </div>
                     <Link href='/Posters' className="hover:text-accent transition-colors">
                         <p className='font-medium font-space text-neutral opacity-95 hover:opacity-100 text-xl sm:text-3xl md:text-4xl lg:text-6xl'>
-                            Led the design strategy, creating impactful campaigns and digital content to enhance cancer awareness and effectively communicate the organization`&apos;`s mission.</p>
+                            Led the design strategy, creating impactful campaigns and digital content to enhance cancer awareness and effectively communicate the organization&apos;s mission.</p>
                     </Link>
                 </div>
             </div>

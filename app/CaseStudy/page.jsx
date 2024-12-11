@@ -25,10 +25,10 @@ const CaseStudy = () => {
 
                     <div className="columns-3 pt-12 pb-6 flex justify-between w-full border-b-2">
                         <div>
-                            <h1 className="text-neutral_light font-oswald font-semibold text-xl sm:text-2xl md:text-4xl ">
+                            <h1 className="text-neutral_light font-oswald font-semibold texl-xl sm:text-2xl md:text-4xl ">
                                 Role
                             </h1>
-                            <p className="text-neutral text-base sm:text-lg md:text-xl font-space ">
+                            <p className="text-neutral font-space text-base sm:text-lg md:text-xl">
                                 Product Designer
                             </p>
                         </div>
