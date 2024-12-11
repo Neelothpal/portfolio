@@ -41,11 +41,7 @@ const LoadingScreen = ({ onStartClick }) => {
         <div className="fixed inset-0 flex items-center cursor-none justify-center z-50 bg-primary bg-cover bg-no-repeat bg-[url('/grain.svg')] min-h-screen">
             <div className="text-center flex flex-col items-center space-y-6">
 
-                {/* Polygon Images */}
-                <div className="flex flex-row hidden justify-center items-center w-16">
-                    <Image src={Polygon1} alt="bottom" className="relative polygon1 size-12" />
-                    <Image src={Polygon2} alt="top" className="relative polygon2 size-12" />
-                </div>
+                {/* Polygon Animation */}
 
                 <div className="flex flex-row justify-center items-center w-16">
                     <Image src={Polygon1} alt="bottom" className="relative polygon12 size-12" />
