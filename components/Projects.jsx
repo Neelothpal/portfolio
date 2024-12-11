@@ -1,20 +1,18 @@
 
 import Project from './Project'
-import HashGuard from '@public/hashguard.png'
-import StudySquard from '@public/studysquad.png'
 
 const Projects = () => {
 
     const projectData = [
         {
-            image: HashGuard,
+            image: "/HashGuard.png",
             title: "Hash Guard",
             description: "A secure cryptography tool to learn and implement cryptographic algorithms.",
             technologies: ["C ", "Docker ", "MbedTLS "],
             link: "https://github.com/Neelothpal/Intel_Unnati-2024"
         },
         {
-            image: StudySquard,
+            image: "/StudySquad.png",
             title: "Study Squad",
             description: "A collaborative platform for students to study together and summarize youtube videos.",
             technologies: ["Javascript ", "Firebase ", "Python ", "Flask "],
