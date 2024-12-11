@@ -14,7 +14,7 @@ const CaseStudy = () => {
                 <div className=' flex flex-col w-auto h-auto '>
 
                     <Image
-                        src="/posters/banner.png"
+                        src="/banner.png"
                         alt="Delicieux"
                         className=" z-40"
                         width={500}
