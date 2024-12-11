@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" opacity='0.03' fill-opacity="0.07" preserveAspectRatio="none">
+  <defs>
+    <!-- Gradient Definitions -->
+    <linearGradient gradientTransform="rotate(-20, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="gradient2">
+      <stop stop-color="hsla(21, 35%, 92%, 1.00)" stop-opacity="1" offset="0%"></stop>
+      <stop stop-color="rgba(255,255,255,0)" stop-opacity="0" offset="100%"></stop>
+    </linearGradient>
+    <linearGradient gradientTransform="rotate(74, 0.5, 0.5)" x1="50%" y1="0%" x2="50%" y2="100%" id="gradient3">
+      <stop stop-color="#dfc9bc" stop-opacity="1"></stop>
+      <stop stop-color="rgba(255,255,255,0)" stop-opacity="0" offset="100%"></stop>
+    </linearGradient>
+
+    <!-- Noise Filter -->
+    <filter id="noise-filter" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="2" seed="2" stitchTiles="stitch" result="turbulence"></feTurbulence>
+      <feColorMatrix type="saturate" values="0" in="turbulence" result="desaturated"></feColorMatrix>
+      <feComponentTransfer in="desaturated" result="brightened">
+        <feFuncR type="linear" slope="3"></feFuncR>
+        <feFuncG type="linear" slope="3"></feFuncG>
+        <feFuncB type="linear" slope="3"></feFuncB>
+      </feComponentTransfer>
+      <feColorMatrix type="matrix" values="1 0 0 0 0
+                                           0 1 0 0 0
+                                           0 0 1 0 0
+                                           0 0 0 19 -11" in="brightened" result="final-noise"></feColorMatrix>
+    </filter>
+  </defs>
+
+  <!-- Background and Effects -->
+  <g>
+    <rect width="100%" height="100%" fill="url(#gradient3)"></rect>
+    <rect width="100%" height="100%" fill="url(#gradient2)"></rect>
+    <rect width="100%" height="100%" fill="transparent" filter="url(#noise-filter)" style="mix-blend-mode: soft-light;"></rect>
+  </g>
+</svg>
