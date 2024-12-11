@@ -23,8 +23,8 @@ const CaseStudy = () => {
                     />
 
 
-                    <div className="columns-3 pt-12 pb-6 flex justify-between w-full border-b-2">
-                        <div>
+                    <div className="columns-3 pt-12 pb-6 flex justify-around  border-b-2">
+                        <div className="pr-2">
                             <h1 className="text-neutral_light font-oswald font-semibold texl-xl sm:text-2xl md:text-4xl ">
                                 Role
                             </h1>
@@ -32,7 +32,7 @@ const CaseStudy = () => {
                                 Product Designer
                             </p>
                         </div>
-                        <div>
+                        <div className="px-2">
                             <h1 className="text-neutral_light font-oswald font-semibold texl-xl sm:text-2xl md:text-4xl ">
                                 Duration
                             </h1>
@@ -40,16 +40,17 @@ const CaseStudy = () => {
                                 12 weeks
                             </p>
                         </div>
-                        <div>
-                            <h1 className="text-neutral_light font-oswald font-semibold text-xl sm:text-2xl md:text-4xl ">
+                        <div className="pl-4">
+                            <h1 className="text-neutral_light font-oswald font-semibold texl-xl sm:text-2xl md:text-4xl ">
                                 Tools
                             </h1>
-                            <p className="text-neutral font-space  text-base sm:text-lg md:text-xl">
+                            <p className="text-neutral font-space text-base sm:text-lg md:text-xl">
                                 Figma, Adobe XD
                             </p>
                         </div>
+
                     </div>
-                    <div className="flex flex-col gap-8 sm:gap-12 md:gap-20 pt-16 w-full">
+                    <div className="flex flex-col gap-20 pt-16 w-full">
                         <div className="flex flex-col md:flex-row flex-wrap">
                             <h1 className="font-oswald font-semibold text-5xl md:w-1/2 text-neutral_light">
                                 Brief
