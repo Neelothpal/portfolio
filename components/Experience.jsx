@@ -37,7 +37,7 @@ const Experience = () => {
                         </div>
                         <Link href='/Posters' className="hover:text-accent transition-colors">
                             <p className='font-medium font-space text-neutral-80 opacity-95 hover:opacity-100 text-xl sm:text-xl md:text-2xl lg:text-4xl'>
-                                Led the <span className="italic font-serif">design strategy</span>, creating <span className="italic font-serif">impactful campaigns</span> and <span className="italic font-serif">digital content</span> to enhance <span className="italic font-serif">cancer awareness</span> and effectively communicate the organization's mission.
+                                Led the <span className="italic font-serif">design strategy</span>, creating <span className="italic font-serif">impactful campaigns</span> and <span className="italic font-serif">digital content</span> to enhance <span className="italic font-serif">cancer awareness</span> and effectively communicate the organization&apos;s mission.
                             </p>
 
                         </Link>
