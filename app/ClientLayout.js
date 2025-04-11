@@ -2,7 +2,7 @@
 
 import localFont from "next/font/local";
 import "./globals.css";
-import { Oswald, Space_Grotesk, Poppins } from "next/font/google";
+import { Oswald, Space_Grotesk, Poppins, Literata, Inter } from "next/font/google";
 import CustomCursor from "../components/CustomCursor";
 import LoadingScreen from "../components/LoadingScreen";
 import { useEffect, useState } from "react";
@@ -18,6 +18,19 @@ const space = Space_Grotesk({
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
+
+const inter = Inter({
+  variable: "--font-inter",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const literata = Literata({
+  variable: "--font-literata",
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
 
 const poppins = Poppins({
   variable: "--font-poppins",

@@ -87,24 +87,17 @@ const CustomCursor = () => {
         <>
             <div
                 id="custom-cursor"
-                className="fixed pointer-events-none bg-accent opacity-60 z-[9999] md:flex hidden"
+                className="fixed pointer-events-none rounded-full bg-neutral-80 z-[9999] md:flex hidden"
                 style={{
                     transform: "translate(-50%, -50%)",
-                    filter: "contrast(175%)",
+                    filter: "contrast(100%)",
                     width: "2.5rem",
                     height: "2.5rem",
+                    backgroundColor: "white", // or black, depending on your design
+                    mixBlendMode: "difference",
                     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
                 }}
             />
-            <div
-                id="cursor-text"
-                className="fixed md:flex hidden pointer-events-none text-sm font-semibold opacity-0 text-neutral_light-80 z-[9999]"
-                style={{
-                    transform: "translate(-50%, -50%)",
-                }}
-            >
-                Click Here
-            </div>
         </>
     );
 };

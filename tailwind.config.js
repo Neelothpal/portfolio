@@ -24,7 +24,7 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: {
-          DEFAULT: "#191714",
+          DEFAULT: "#1A1C1C",
           light: "var(--primary-light)",
           dark: "var(--primary-dark)",
         },
@@ -34,9 +34,9 @@ module.exports = {
           60: "#E97A5099",
         },
         neutral: {
-          DEFAULT: "#D1BFA7",
-          80: "#D1BFA7CC",
-          60: "#D1BFA799",
+          DEFAULT: "#FFFFFF",
+          80: "#FFFFFFCC",
+          60: "#FFFFFF99",
         },
         neutral_light: {
           DEFAULT: "#F5E9DA",
@@ -54,6 +54,8 @@ module.exports = {
         space: ['Space Grotesk', 'sans-serif'],
         Doto: ['Doto', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        literata: ['Literata', 'serif'],
+        inter: ['Inter', 'sans-serif'],
       },
     },
   },

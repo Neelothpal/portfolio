@@ -1,73 +1,55 @@
 "use client";
 
-import Image from "next/image";
-import { useRouter } from "next/compat/router";
 import { useState, useEffect } from "react";
-import Polygon1 from "../public/polygon1.svg";
-import Polygon2 from "../public/polygon2.svg";
-import CircleAnimation from "./CircleAnimation"; // Import the CircleAnimation component
+import Neel from '../public/neel_icon.svg'
+import Image from "next/image";
+
 
 const LoadingScreen = ({ onStartClick }) => {
-    const [mounted, setMounted] = useState(false); // Track if the component is mounted
-    const [count, setCount] = useState(0); // Counter to count from 1 to 100
-    const router = useRouter(); // Next.js router
+    const [mounted, setMounted] = useState(false);
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
-        setMounted(true); // Ensure the component is only rendered on the client-side
+        setMounted(true);
 
-        // Start counting from 1 to 100
         const counterInterval = setInterval(() => {
             setCount((prevCount) => {
-                if (prevCount < 100) {
-                    return prevCount + 2;
-                } else {
-                    clearInterval(counterInterval); // Stop the counter when it reaches 100
-                    return 100;
+                const newCount = prevCount + 2;
+                if (newCount >= 100) {
+                    clearInterval(counterInterval);
                 }
+                return Math.min(newCount, 100);
             });
-        }, 50); // Increment the counter every 50ms
+        }, 50);
 
-        // Cleanup the interval on component unmount
         return () => clearInterval(counterInterval);
     }, []);
 
-    const handleStartClick = () => {
-        onStartClick(); // Call the passed function from ClientLayout to stop loading and show the page
-    };
+    useEffect(() => {
+        if (count === 100) {
+            onStartClick();
+        }
+    }, [count, onStartClick]);
 
-    if (!mounted) return null; // Avoid SSR issues by waiting for mounting
+    if (!mounted) return null;
 
     return (
-        <div className="fixed inset-0 flex items-center cursor-none justify-center z-50 bg-primary bg-cover bg-no-repeat bg-[url('/grain.svg')] min-h-screen">
-            <div className="text-center flex flex-col items-center space-y-6">
+        <div className="fixed inset-0 z-50 bg-neutral bg-cover bg-no-repeat bg-[url('/grain.svg')] min-h-screen flex items-center justify-center cursor-none">
+            {/* Full-width loading bar at top */}
+            <div className="fixed top-0 left-0 h-1 w-full bg-neutral-200 z-50">
+                <div
+                    className="h-full bg-accent transition-all duration-100 ease-in-out"
+                    style={{ width: `${count}%` }}
+                />
+            </div>
 
-                {/* Polygon Animation */}
-
-                <div className="flex flex-row justify-center items-center w-16">
-                    <Image src={Polygon1} alt="bottom" className="relative polygon12 size-12" />
-                    <Image src={Polygon2} alt="top" className="relative polygon23 size-12" />
-                </div>
-
+            {/* Center content */}
+            <div className="text-center flex flex-col items-center space-y-6 z-40">
+                {/* Circle animation and count */}
                 <div className="flex flex-col justify-center items-center">
-                    {/* Circle Animation */}
-                    <CircleAnimation progress={count} />
+                    <Image src={Neel} alt='logo' className='size-8 sm:size-10 md:size-10 lg:size-36 '></Image>
 
-                    {/* Loading Text */}
-                    <h1 className="text-md text-neutral mb-4">
-                        {count}%
-                    </h1>
                 </div>
-
-
-
-                {/* Start button (hidden until count reaches 100) */}
-                <button
-                    onClick={handleStartClick}
-                    className={`px-10 py-2 border-accent border-2 text-neutral_light rounded-full font-semibold hover:bg-accent_dark transition duration-300 ease-in-out ${count < 100 ? "invisible" : "visible"
-                        }`}
-                >
-                    Start
-                </button>
             </div>
         </div>
     );

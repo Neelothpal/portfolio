@@ -8,12 +8,13 @@ import Certificates from "@/components/Certificates";
 import Contact from "@/components/Contact";
 import Navbar from "@/components/Navbar";
 import CaseStudies from "@/components/CaseStudies";
+import Designs from "@/components/Designs"
 
 export default function Home() {
   return (
     <main className="bg-primary bg-cover bg-no-repeat bg-[url('/grain.svg')] min-h-screen">
       <div className='w-full h-full'>
-        <div className="w-full z-10 fixed">
+        <div className="w-full z-10 mix-blend-difference fixed">
           <Navbar />
         </div>
       </div>
@@ -25,14 +26,12 @@ export default function Home() {
           <About />
         </div>
         <div id="experience">
-          <Experience />
+          <CaseStudies />
         </div>
-        <CaseStudies />
         <Projects />
-        <div id="education">
-          <Education />
-        </div>
+        <Experience />
         <Certificates />
+        <Designs />
         <div id="contact">
           <Contact />
         </div>

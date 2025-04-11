@@ -4,19 +4,29 @@
 
 
 body {
-    cursor: none; /* Hides the default cursor */
-  }
+  cursor: none;
+  /* Hides the default cursor */
+}
+
+a {
+  cursor: none;
+}
+
+button {
+  cursor: none;
+}
 
 @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /* Tailwind class override */
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Tailwind class override */
 .z-40 {
   position: relative;
   z-index: 40;
@@ -25,25 +35,35 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
 @keyframes movePolygon1 {
   0% {
-    left: 19px; /* Tailwind left-4 equivalent */
-    top: 0; /* Initial position */
+    left: 19px;
+    /* Tailwind left-4 equivalent */
+    top: 0;
+    /* Initial position */
   }
+
   100% {
-    left: 8px; /* Tailwind left-[10px] equivalent */
-    top: -10px; /* Move up (Tailwind -top-[10px] equivalent) */
+    left: 8px;
+    /* Tailwind left-[10px] equivalent */
+    top: -10px;
+    /* Move up (Tailwind -top-[10px] equivalent) */
   }
 }
 
 @keyframes movePolygon2 {
   0% {
-    left: -19px; /* Tailwind -left-4 equivalent */
+    left: -19px;
+    /* Tailwind -left-4 equivalent */
     top: 0rem;
   }
+
   100% {
-    left: -8px; /* Tailwind -left-[10px] equivalent */
-    top: 0.5rem; /* Tailwind top-2 equivalent */
+    left: -8px;
+    /* Tailwind -left-[10px] equivalent */
+    top: 0.5rem;
+    /* Tailwind top-2 equivalent */
   }
 }
 
@@ -61,41 +81,56 @@ html {
 @keyframes movePolygon12 {
   0% {
     transform: rotate(35deg);
-    left: 19px; /* Tailwind left-4 equivalent */
-    top: 0; /* Initial position */
+    left: 19px;
+    /* Tailwind left-4 equivalent */
+    top: 0;
+    /* Initial position */
   }
+
   25% {
     transform: rotate(35deg);
-    top: -10px; /* Initial position */
-  }
-  75% {
-    transform: rotate(35deg); /* Tailwind left-[10px] equivalent */
     top: -10px;
-    left: 15px; /* Initial position */
+    /* Initial position */
   }
+
+  75% {
+    transform: rotate(35deg);
+    /* Tailwind left-[10px] equivalent */
+    top: -10px;
+    left: 15px;
+    /* Initial position */
+  }
+
   100% {
-    left: 8px; /* Tailwind left-[10px] equivalent */
-    top: -10px; /* Initial position */
+    left: 8px;
+    /* Tailwind left-[10px] equivalent */
+    top: -10px;
+    /* Initial position */
   }
 }
 
 @keyframes movePolygon23 {
   0% {
     transform: rotate(35deg);
-    left: -19px; /* Tailwind -left-4 equivalent */
+    left: -19px;
+    /* Tailwind -left-4 equivalent */
     top: 0rem;
   }
+
   25% {
     transform: rotate(35deg);
     top: 0.5rem;
   }
+
   75% {
     transform: rotate(35deg);
     left: -15px;
     top: 0.5rem;
   }
+
   100% {
-    left: -8px; /* Tailwind -left-[10px] equivalent */
+    left: -8px;
+    /* Tailwind -left-[10px] equivalent */
     top: 0.5rem;
   }
 }

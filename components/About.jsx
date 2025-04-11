@@ -17,9 +17,9 @@ const About = () => {
                     if (line) {
                         gsap.fromTo(
                             line,
-                            { color: "#897355" }, // Initial color (accent)
+                            { color: "#FFFFFF08" }, // Initial color (accent)
                             {
-                                color: "#D1BFA7", // Final color (neutral)
+                                color: "#FFFFFFFF", // Final color (neutral)
                                 scrollTrigger: {
                                     trigger: line,
                                     start: "top 80%", // Trigger when the line is near the viewport
@@ -42,10 +42,10 @@ const About = () => {
 
     return (
         <div className="w-auto px-14 py-16 sm:px-20 sm:py-16 md:px-24 md:py-32 lg:px-40 lg:py-40 flex flex-col items-start sm:justify-center text-neutral">
-            <h1 className="text-xl md:text-xl font-poppins text-accent">
+            <h1 className="text-xl md:text-xl font-literata text-accent">
                 ABOUT ME
             </h1>
-            <div className="text-3xl md:text-6xl lg:text-8xl  font-title font-semibold font-oswald leading-tight">
+            <div className="text-3xl text-neutral md:text-6xl lg:text-8xl  font-title font-semibold font-oswald leading-tight">
                 {[
                     "I'M A PURPOSE-DRIVEN",
                     "UI/UX DESIGNER AND DEVELOPER,",
@@ -55,7 +55,7 @@ const About = () => {
                     <p
                         key={index}
                         ref={(el) => (textLines.current[index] = el)}
-                        className="opacity-100 translate-y-5 transition-transform duration-500"
+                        className="opacity-100 text-white translate-y-5 transition-transform duration-500"
                     >
                         {line}
                     </p>

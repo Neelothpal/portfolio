@@ -1,46 +1,48 @@
-import React from 'react'
-import Image from 'next/image'
-import image from '../public/case_study.png'
-import Link from 'next/link'
+
+import React from "react";
+import CaseStudyCard from "./CaseStudyCard"; // Adjust path if needed
+import image1 from "../public/case_study.png";
+import image2 from "../public/case_study_2.png";
+import image3 from "../public/case_study_3.png";
+
+const caseStudies = [
+    {
+        title: "Delicieux",
+        tags: ["PRODUCT DESIGN | CASE STUDY"],
+        image: image1,
+        link: "/DelicieuxCaseStudy",
+        dates: [" DEC 2023 – FEB 2024"]
+    },
+    {
+        title: "WeChat Redesign",
+        tags: ["UX RESEARCH | CASE STUDY"],
+        image: image2,
+        link: "/WeChatCaseStudy",
+        dates: ["NOV 2024 – JAN 2025"]
+    },
+
+];
 
 const CaseStudies = () => {
     return (
-
-        <div className='w-full z-50  text-neutral'>
-            <div className='w-full px-14 py-16 sm:px-20 sm:py-16 md:px-24 md:py-32 lg:px-44 lg:py-40 flex flex-col justify-start'>
-                <h1 className='text-md sm:text-lg md:text-xl font-poppins text-accent'>CASE STUDIES</h1>
-                <div>
-                    <div className='py-4'>
-                        <p className='text-2xl sm:text-2xl md:text-5xl 2xl:text-8xl text-neutral_light font-bold font-oswald pb-3'>
-                            Delicieux
-                        </p>
-                        <div className='flex gap-2'>
-                            <h1 className='w-28 sm:w-32 md:w-36 px-1 py-2 text-center rounded-sm md:rounded-md border-accent border-2 text-xs sm:text-xs md:text-sm text-neutral'>
-                                PRODUCT DESIGN
-                            </h1>
-                            <h1 className='w-28 sm:w-32 md:w-36 px-1 py-2 text-center rounded-sm md:rounded-md border-accent border-2 text-xs sm:text-xs md:text-sm text-neutral'>
-                                CASE STUDY
-                            </h1>
-                        </div>
-                    </div>
-                    <Link href='/CaseStudy' >
-                        <div className=' rounded-lg border-accent-80 hover:border-neutral border-2 w-auto h-auto'>
-
-                            <Image
-                                src={image}
-                                alt="Delicieux"
-                                className="rounded-t-md rounded-lg z-40"
-                                width={500}
-                                height={300}
-                                layout="responsive"
-                            />
-
-                        </div>
-                    </Link>
+        <div className="w-full z-50 bg-neutral bg-opacity-80 bg-blend-difference text-primary">
+            <div className="w-full px-14 py-16 sm:px-20 sm:py-16 md:px-24 md:pt-32 lg:px-44 lg:pt-36 flex flex-col justify-start">
+                <h1 className="text-md sm:text-lg md:text-xl font-literata text-accent">CASE STUDIES</h1>
+                <div className="flex flex-col gap-8">
+                    {caseStudies.map((study, index) => (
+                        <CaseStudyCard
+                            key={index}
+                            title={study.title}
+                            tags={study.tags}
+                            dates={study.dates}
+                            image={study.image}
+                            link={study.link}
+                        />
+                    ))}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default CaseStudies
+export default CaseStudies;
