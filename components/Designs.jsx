@@ -3,7 +3,6 @@ import design1 from "../public/design1.png";
 import design2 from "../public/design2.png";
 import design3 from "../public/design3.png";
 import Image from "next/image";
-import { Quote } from 'lucide-react';
 
 
 const Designs = () => {
