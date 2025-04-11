@@ -47,7 +47,7 @@ const LoadingScreen = ({ onStartClick }) => {
             <div className="text-center flex flex-col items-center space-y-6 z-40">
                 {/* Circle animation and count */}
                 <div className="flex flex-col justify-center items-center">
-                    <Image src={Neel} alt='logo' className='size-8 sm:size-10 md:size-10 lg:size-36 '></Image>
+                    <Image src={Neel} alt='logo' className='size-32 sm:size-32 md:size-36 lg:size-48 '></Image>
 
                 </div>
             </div>
