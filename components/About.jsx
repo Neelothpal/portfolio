@@ -41,7 +41,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className="w-auto px-14 py-16 sm:px-20 sm:py-16 md:px-24 md:py-32 lg:px-40 lg:py-40 flex flex-col items-start sm:justify-center text-neutral">
+        <div className="w-auto px-14 py-16 pb-24 sm:px-20 sm:py-16 md:px-24 md:py-32 lg:px-40 lg:py-40 flex flex-col items-start sm:justify-center text-neutral">
             <h1 className="text-xl md:text-xl font-literata text-accent">
                 ABOUT ME
             </h1>

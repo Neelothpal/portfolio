@@ -5,10 +5,10 @@ import Link from "next/link";
 const CaseStudyCard = ({ title, tags, image, link, dates }) => {
     return (
         <div>
-            <p className="text-2xl mt-4 sm:text-2xl md:text-4xl 2xl:text-5xl text-primary font-bold font-inter pb-3">
+            <p className="text-2xl mt-4 sm:text-2xl md:text-4xl 2xl:text-5xl text-primary font-bold font-inter pb-1 md:pb-3">
                 {title}
             </p>
-            <div className="flex justify-between">
+            <div className="flex flex-col md:flex-row md:justify-between">
                 <div className="flex gap-2">
                     {tags.map((tag, idx) => (
                         <h1

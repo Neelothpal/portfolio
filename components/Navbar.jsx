@@ -8,7 +8,7 @@ import Linkedin from '../public/linkedin.svg'
 
 const Navbar = () => {
     return (
-        <div className='flex flex-col justify-between items-start md:w-auto w-full h-screen p-2 sm:p-5 text-neutral'>
+        <div className='flex flex-col justify-between items-start md:w-auto w-full h-[94vh] md:h-screen p-2 sm:p-5 text-neutral'>
             <div className='w-full flex justify-between'>
                 <Link href="#hero" className="hover:text-accent transition-colors">
                     <Image src={Neel} alt='logo' className='size-8 sm:size-10 md:size-10 lg:size-12 '></Image>
@@ -31,7 +31,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-            <div className='flex flex-col gap-4 xl:gap-6 ml-auto w-[2px] h-[65%] bg-neutral justify-center items-center'>
+            <div className='flex flex-col gap-4 xl:gap-6 ml-auto w-[2px] h-[75%] md:h-[65%] bg-neutral justify-center items-center'>
 
             </div>
             <div className='flex flex-col gap-4 xl:gap-6 w-full h-auto justify-end items-end'>

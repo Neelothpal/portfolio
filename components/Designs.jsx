@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Designs = () => {
     return (
-        <section className="relative w-full min-h-[60vh] flex flex-col items-center justify-center overflow-hidden px-4 pb-8 md:pb-40 lg:py-40 mt-0">
+        <section className="relative w-full min-h-[60vh] flex flex-col items-center justify-center overflow-hidden px-4 pt-4 pb-8 md:pb-40 lg:py-40 mt-0">
             {/* Image container */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 w-full max-w-6xl">
                 {/* Image 1 */}

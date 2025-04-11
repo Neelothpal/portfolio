@@ -26,9 +26,9 @@ const caseStudies = [
 const CaseStudies = () => {
     return (
         <div className="w-full z-50 bg-neutral bg-opacity-80 bg-blend-difference text-primary">
-            <div className="w-full px-14 py-16 sm:px-20 sm:py-16 md:px-24 md:pt-32 lg:px-44 lg:pt-36 flex flex-col justify-start">
+            <div className="w-full px-14 py-16 pb-2 sm:px-20 sm:py-16 md:px-24 md:pt-32 lg:px-44 lg:pt-36 flex flex-col justify-start">
                 <h1 className="text-md sm:text-lg md:text-xl font-literata text-accent">CASE STUDIES</h1>
-                <div className="flex flex-col gap-8">
+                <div className="flex flex-col gap-4 md:gap-8">
                     {caseStudies.map((study, index) => (
                         <CaseStudyCard
                             key={index}
