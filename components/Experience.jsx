@@ -18,7 +18,7 @@ const Experience = () => {
                             </p>
                         </div>
                         <Link href='/Posters' className="hover:text-accent transition-colors">
-                            <p className="text-neutral-80 z-40 text-xl md:text-2xl lg:text-4xl font-space font-medium">
+                            <p className="text-neutral-80 z-40 pt-2 text-xl md:text-2xl lg:text-4xl font-space font-medium">
                                 Designed <span className="italic font-serif">clean</span>, <span className="italic font-serif">functional</span> visuals based on client input, ensuring <span className="italic font-serif">clarity</span> and <span className="italic font-serif">usability</span> while delivering a smooth collaboration experience that resulted in a <span className="italic font-serif">5-star review</span>.
                             </p>
 
@@ -36,7 +36,7 @@ const Experience = () => {
                             </p>
                         </div>
                         <Link href='/Posters' className="hover:text-accent transition-colors">
-                            <p className='font-medium font-space text-neutral-80 opacity-95 hover:opacity-100 text-xl sm:text-xl md:text-2xl lg:text-4xl'>
+                            <p className='font-medium font-space pt-2 text-neutral-80 opacity-95 hover:opacity-100 text-xl sm:text-xl md:text-2xl lg:text-4xl'>
                                 Led the <span className="italic font-serif">design strategy</span>, creating <span className="italic font-serif">impactful campaigns</span> and <span className="italic font-serif">digital content</span> to enhance <span className="italic font-serif">cancer awareness</span> and effectively communicate the organization&apos;s mission.
                             </p>
 
