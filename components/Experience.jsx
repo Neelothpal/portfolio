@@ -17,13 +17,9 @@ const Experience = () => {
                                 UPWORK
                             </p>
                         </div>
-                        <Link href='/Posters' className="hover:text-accent transition-colors">
-                            <p className="text-neutral-80 z-40 pt-2 text-xl md:text-2xl lg:text-4xl font-space font-medium">
-                                Designed <span className="italic font-serif">clean</span>, <span className="italic font-serif">functional</span> visuals based on client input, ensuring <span className="italic font-serif">clarity</span> and <span className="italic font-serif">usability</span> while delivering a smooth collaboration experience that resulted in a <span className="italic font-serif">5-star review</span>.
-                            </p>
-
-
-                        </Link>
+                        <p className="text-neutral-80 z-40 pt-2 text-xl md:text-2xl lg:text-4xl font-space font-medium">
+                            Designed <span className="italic font-serif">clean</span>, <span className="italic font-serif">functional</span> visuals based on client input, ensuring <span className="italic font-serif">clarity</span> and <span className="italic font-serif">usability</span> while delivering a smooth collaboration experience that resulted in a <span className="italic font-serif">5-star review</span>.
+                        </p>
                     </div>
                     <div className='z-10'>
 

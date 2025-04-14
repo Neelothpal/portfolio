@@ -82,7 +82,7 @@ const CaseStudy = () => {
                         </div>
 
                     </div>
-                    <p className="md:text-2xl sm:text-xl text-lg lg:pt-20 md:pt-16 pt-12 font-space" >
+                    <p className="md:text-2xl hidden sm:text-xl text-lg lg:pt-20 md:pt-16 pt-12 font-space" >
                         <span className="text-accent-80 hover:text-accent font-bold "><a href="https://www.figma.com/design/0eTj56js5gOSeqA1ITOYXa/Delicieux?node-id=493-650&t=bYyYDNjhtTZUKrLa-1" target="_blank" rel="noopener noreferrer">Click Here</a></span> to view the full case study and the design in Figma..
                     </p>
                 </div>
